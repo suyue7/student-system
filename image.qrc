@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/images"/>
+    <qresource prefix="/image">
+        <file>image/backgroung.png</file>
+        <file>image/help.png</file>
+        <file>image/add.png</file>
+        <file>image/cancel.PNG</file>
+        <file>image/edit.png</file>
+        <file>image/ok.PNG</file>
+        <file>image/pie.png</file>
+        <file>image/search.png</file>
+        <file>image/sort.png</file>
+        <file>image/close.png</file>
+        <file>image/min.png</file>
+        <file>image/background2.jpg</file>
+        <file>image/edit_big.png</file>
+        <file>image/announcement.png</file>
+        <file>image/person.png</file>
+        <file>image/pie_big.png</file>
+        <file>image/person_g.png</file>
+        <file>image/gaipwd.png</file>
+        <file>image/jiake.png</file>
+        <file>image/logout.png</file>
+        <file>image/pingjiao.png</file>
+        <file>image/back111.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>announcepage</class>
+ <widget class="QWidget" name="announcepage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1072</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1072</width>
+    <height>628</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1072</width>
+    <height>628</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#announcepage{
+background-color: rgb(235, 244, 234);
+}
+QLineEdit {
+    border-width: 1px;
+    padding: 1px;
+    border-style: solid;
+	border-color: rgb(22, 102, 57);
+    border-radius: 5px;
+}
+
+/* As mentioned above, eliminate the padding and increase the border. */
+QLineEdit:focus:focus {
+    border-width: 3px;
+    padding: 0px;
+}
+
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+}
+.QPushButton:!hover
+{
+/*background-color: rgb(162, 210, 152);*/
+	background-color: rgb(17, 99, 56);
+color: rgb(255, 255, 255);
+font: 9pt &quot;微软雅黑&quot;;
+border-color: rgb(255, 255, 255);
+border-radius:3px;
+ padding: 3px;
+}
+.QPushButton:hover
+{
+background-color: rgb(85, 170, 127);
+color: rgb(255, 255, 255);
+font: 9pt &quot;微软雅黑&quot;;
+border-color: rgb(255, 255, 255);
+border-radius:3px
+}
+.QPushButton:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>公告栏管理</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>80</y>
+     <width>271</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="publishBtn">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>390</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发布</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>50</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(0, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>公告编辑栏</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteBtn">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>550</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>0</y>
+     <width>270</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>15</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="toclassBtn">
+      <property name="text">
+       <string>管理课程</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="tostudentBtn">
+      <property name="text">
+       <string>管理学生</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="toteacherBtn">
+      <property name="text">
+       <string>管理教师</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>601</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>6</number>
+   </property>
+   <widget class="QWidget" name="tab1">
+    <attribute name="title">
+     <string>公告信息</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab2">
+    <attribute name="title">
+     <string>学校文件</string>
+    </attribute>
+    <widget class="QListView" name="listView_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>641</width>
+       <height>371</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab3">
+    <attribute name="title">
+     <string>党务工作</string>
+    </attribute>
+    <widget class="QListView" name="listView_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>641</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab4">
+    <attribute name="title">
+     <string>教育教学</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab5">
+    <attribute name="title">
+     <string>学生工作</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab6">
+    <attribute name="title">
+     <string>后勤工作</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab7">
+    <attribute name="title">
+     <string>讲座论坛</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab8">
+    <attribute name="title">
+     <string>人才招聘</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab9">
+    <attribute name="title">
+     <string>科研事项公示</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>230</y>
+     <width>70</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>发送类别</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>标题</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>发送部门</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>230</y>
+     <width>126</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+    background-color: white;
+    border: 1px solid #333333;
+    color: black;
+    padding:1px 2em 1px 3px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    border-left: 1px solid #333333;
+}
+
+QComboBox::down-arrow {
+    border: 2px solid #333333;
+    width: 6px;
+    height: 6px;
+    background: rgb(17, 99, 56);
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>公告信息</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>学校文件</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>党务工作</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>教育教学</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>学生工作</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>后勤工作</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>讲座论坛</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>人才招聘</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>科研事项</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="titleEdit"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="whereEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="searchEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>90</y>
+     <width>381</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="searchBtn">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>90</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>601</width>
+     <height>351</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>输入关键词</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

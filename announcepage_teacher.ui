@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>announcepage_teacher</class>
+ <widget class="QWidget" name="announcepage_teacher">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>667</width>
+    <height>583</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>667</width>
+    <height>583</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>667</width>
+    <height>583</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>校园公告</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#announcepage_teacher{
+background-color: rgb(235, 244, 234);
+}
+QLineEdit {
+    border-width: 1px;
+    padding: 1px;
+    border-style: solid;
+	border-color: rgb(22, 102, 57);
+    border-radius: 5px;
+}
+
+/* As mentioned above, eliminate the padding and increase the border. */
+QLineEdit:focus:focus {
+    border-width: 3px;
+    padding: 0px;
+}
+
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+}
+.QPushButton:!hover
+{
+background-color: rgb(162, 210, 152);
+color: rgb(255, 255, 255);
+font: 9pt &quot;微软雅黑&quot;;
+border-color: rgb(255, 255, 255);
+border-radius:3px;
+ padding: 3px;
+}
+.QPushButton:hover
+{
+background-color: rgb(85, 170, 127);
+color: rgb(255, 255, 255);
+font: 9pt &quot;微软雅黑&quot;;
+border-color: rgb(255, 255, 255);
+border-radius:3px
+}
+.QPushButton:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>25</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25pt &quot;楷体&quot;;
+color: rgb(17, 99, 56);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;校园公告&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitBtn">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>540</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>601</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(18, 96, 55);
+background-color: rgb(235, 244, 234);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab1">
+    <attribute name="title">
+     <string>公告信息</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab2">
+    <attribute name="title">
+     <string>学校文件</string>
+    </attribute>
+    <widget class="QListView" name="listView_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>641</width>
+       <height>371</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab3">
+    <attribute name="title">
+     <string>党务工作</string>
+    </attribute>
+    <widget class="QListView" name="listView_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>641</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab4">
+    <attribute name="title">
+     <string>教育教学</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab5">
+    <attribute name="title">
+     <string>学生工作</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab6">
+    <attribute name="title">
+     <string>后勤工作</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab7">
+    <attribute name="title">
+     <string>讲座论坛</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab8">
+    <attribute name="title">
+     <string>人才招聘</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab9">
+    <attribute name="title">
+     <string>科研事项公示</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="searchEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>72</y>
+     <width>551</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="searchBtn">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>70</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/image/search.png);
+background-color: rgb(255, 255, 255);
+font: 9pt &quot;微软雅黑&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>170</y>
+     <width>601</width>
+     <height>351</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FavoritesBtn">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>540</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>收藏夹</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>481</x>
+     <y>11</y>
+     <width>72</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/image/person_g.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="uidlabel">
+   <property name="geometry">
+    <rect>
+     <x>559</x>
+     <y>11</y>
+     <width>91</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+color: rgb(18, 96, 55);</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="namelabel">
+   <property name="geometry">
+    <rect>
+     <x>559</x>
+     <y>35</y>
+     <width>91</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;微软雅黑&quot;;
+color: rgb(18, 96, 55);
+</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
